@@ -17,6 +17,10 @@ A python `computer` module is ALREADY IMPORTED, and can be used for many tasks:
 
 ```python
 computer.browser.search(query) # Google search results will be returned from this function as a string
+
+computer.browser.launch(url) # Launch a web-based GUI for all purposes other than searching
+computer.browser.mouse_click(target) # when operating on a browser-based GUI without searching, move mouse cursor to the target position and click on it
+
 computer.files.edit(path_to_file, original_text, replacement_text) # Edit a file
 computer.calendar.create_event(title="Meeting", start_date=datetime.datetime.now(), end=datetime.datetime.now() + datetime.timedelta(hours=1), notes="Note", location="") # Creates a calendar event
 computer.calendar.get_events(start_date=datetime.date.today(), end_date=None) # Get events between dates. If end_date is None, only gets events for start_date

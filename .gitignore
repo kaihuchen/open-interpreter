@@ -209,7 +209,7 @@ $RECYCLE.BIN/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
+.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
@@ -233,3 +233,11 @@ misc/
 
 # Ignore litellm_uuid.txt
 litellm_uuid.txt
+
+# private list
+myoi.py
+mytest.py
+test.py
+_private/
+README.txt
+.gitignore
