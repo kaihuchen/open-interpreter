@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from dotenv import load_dotenv
-load_dotenv('_private/api_keys.env')
+
+# Uncomment the following line and populate the file '_private/api_keys.env' with the requisite API keys,
+# if there is a need to access other systems (such as OpenAI's LLMs).
+#load_dotenv('_private/api_keys.env')
 
 import os 
 import re
@@ -14,10 +17,10 @@ if __name__ == '__main__':
 
     TEMPERATURE = 0.0
 
-    model = 'gpt'
-    model = 'hf'
+#    model = 'gpt'
+#    model = 'hf'
+#    model = 'claude3'
     model = 'lmstudio'
-    model = 'claude3'
 
     args2 = []
     if model=='claude3':

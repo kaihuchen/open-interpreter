@@ -241,3 +241,4 @@ test.py
 _private/
 README.txt
 .gitignore
+poetry.lock
