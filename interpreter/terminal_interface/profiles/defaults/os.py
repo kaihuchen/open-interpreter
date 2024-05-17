@@ -35,7 +35,7 @@ You may use the `computer` Python module to complete tasks:
 
 ```python
 computer.browser.search(query) # Silently searches Google for the query, returns result. The user's browser is unaffected. (does not open a browser!)
-
+ 
 computer.browser.launch(url) # Launch a browser-based GUI for all purposes other than searching
 computer.browser.mouse_click(target) # when operating on a browser-based GUI without searching, move mouse cursor to the target position and click on it
 
