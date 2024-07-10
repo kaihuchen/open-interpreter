@@ -199,8 +199,8 @@ class Browser:
         # search_box = self.driver.find_element(By.NAME, 'q')
         # search_box = self.driver.find_element(By.CSS_SELECTOR, "textarea")
         # WebDriverWait(self.driver,10000).until(expected_conditions.visibility_of_element_located((By.TAG_NAME,'body'))) 
-        hiddenText = "Google apps"
-        self.driver.find_element(By.XPATH, f"//a[contains(@aria-label,'{hiddenText}')]").click()
+        # hiddenText = "Google apps"
+        # self.driver.find_element(By.XPATH, f"//a[contains(@aria-label,'{hiddenText}')]").click()
 
         # self.driver.find_element(By.XPATH, f"//*[text()[contains(.,'Images')]]").click()
 
