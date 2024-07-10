@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 
 # Uncomment the following line and populate the file '_private/api_keys.env' with the requisite API keys,
 # if there is a need to access other systems (such as OpenAI's LLMs).
-#load_dotenv('_private/api_keys.env')
+load_dotenv('_private/api_keys.env')
+
 
 import os 
 import re
@@ -17,10 +18,10 @@ if __name__ == '__main__':
 
     TEMPERATURE = 0.0
 
-#    model = 'gpt'
+    model = 'gpt'
 #    model = 'hf'
 #    model = 'claude3'
-    model = 'lmstudio'
+    # model = 'lmstudio'
 
     args2 = []
     if model=='claude3':
@@ -30,8 +31,8 @@ if __name__ == '__main__':
         api_key = os.getenv(MODEL_API_KEY_NAME)
     elif model=='gpt':
         MODEL_API_KEY_NAME = 'OPENAI_API_KEY_OI'
-        MODEL_NAME = 'gpt-3.5-turbo'
-    #     MODEL_NAME = 'gpt-4'
+        # MODEL_NAME = 'gpt-3.5-turbo'
+        MODEL_NAME = 'gpt-4-turbo'
         api_key = os.getenv(MODEL_API_KEY_NAME)
     elif model=='hf':
         MODEL_API_KEY_NAME = 'HF_HUB'

@@ -37,8 +37,11 @@ You may use the `computer` Python module to complete tasks:
 computer.browser.search(query) # Silently searches Google for the query, returns result. The user's browser is unaffected. (does not open a browser!)
 
 computer.browser.launch(url) # Launch a browser-based GUI for all purposes other than searching
-computer.browser.mouse_click(target) # when operating on a browser-based GUI without searching, move mouse cursor to the target position and click on it
-
+computer.browser.mouse_click(target) # when operating on a browser-based GUI without searching, move mouse cursor to the target position (element containing the text in "target") and click on it
+computer.browser.mouse_click_text(text) # when operating on a browser-based GUI without searching, click on the web element that's a string text of interest. TRY THIS FIRST FOR ALL LINKS SHOWN IN TEXT!
+computer.browser.mouse_click_accessible_text(text) # when operating on a browser-based GUI without searching, use this function to click on a button / link that contains the HIDDEN or ACCESSIBLE text "text" (seen when hovering over the element).
+computer.browser.mouse_click_by_xpath(xpath) # given a pre-generated xpath, click the element described by the parameter 'xpath'.
+computer.browser.get_focus() # bring browser window, if it exists, to the foreground for further manipulation.
 computer.display.info() # Returns a list of connected monitors/Displays and their info (x and y cordinates, width, height, width_mm, height_mm, name). Use this to verify the monitors connected before using computer.display.view() when neccessary
 computer.display.view() # Shows you what's on the screen (primary display by default), returns a `pil_image` `in case you need it (rarely). To get a specific display, use the parameter screen=DISPLAY_NUMBER (0 for primary monitor 1 and above for secondary monitors). **You almost always want to do this first!**
 
